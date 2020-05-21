@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 60%;
-  margin: 40px 140px 140px 140px;
+  margin: 40px 140px 0 140px;
 `;
 
 export const Name = styled.div`
@@ -36,6 +36,7 @@ export const CheckboxText = styled.div`
 export const Button = styled.button`
   padding: 10px 40px;
   margin-top: 30px;
+  margin-bottom: 40px;
   font-size: 16px;
   color: white;
   border: none;
