@@ -12,21 +12,22 @@ import {
   ItemCategory,
 } from "./jokeItem.styles";
 
-export const JokeItem = () => {
+export const JokeItem = (props) => {
+  const { joke } = props;
+
   return (
     <Container>
       <Favorite />
       <MessageHolder>
         <Message />
         <ItemHolder>
-          <ItemId>ID: Link</ItemId>
-          <ItemText>
-            No one truly knows who's Chuck Norris' real father. No one is
-            biologically strong enough for this. He must've conceived himself.
-          </ItemText>
+          <ItemId>ID: {joke.id}</ItemId>
+          <ItemText>{joke.value}</ItemText>
           <DescriptionWrapper>
             <ItemUpdate>Last update: 1923 hours ago</ItemUpdate>
-            <ItemCategory>Celebrity</ItemCategory>
+            {joke.categories.length !== 0 && (
+              <ItemCategory>{joke.categories}</ItemCategory>
+            )}
           </DescriptionWrapper>
         </ItemHolder>
       </MessageHolder>

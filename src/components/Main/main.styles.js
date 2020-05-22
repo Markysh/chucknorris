@@ -42,4 +42,6 @@ export const Button = styled.button`
   border: none;
   border-radius: 10px;
   background: linear-gradient(92.01deg, #8ea7ff 0%, #7291ff 100%);
+  outline: none;
+  cursor: pointer;
 `;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import checkbox from "./checkbox.png";
-import checkboxChecked from "./checkboxChecked.png";
+import checkbox from "./radio.png";
+import checkboxChecked from "./radioChecked.png";
 
 export const CheckboxLabel = styled.label`
   display: flex;
