@@ -2,17 +2,28 @@ import styled from "styled-components";
 import favorite from "./img/favorite.png";
 import favoriteSelect from "./img/favoriteSelect.png";
 import message from "./img/message.png";
+import link from "./img/link.png";
 
 export const Container = styled.div`
   box-sizing: border-box;
   width: 100%;
   padding: 40px 40px;
   margin-bottom: 20px;
-  background: #f8f8f8;
+  background: ${(props) => (props.theme === "light" ? "#ffffff" : "#f8f8f8")};
   border-radius: 20px;
 `;
 
 export const Favorite = styled.div`
+  height: 17px;
+  margin-bottom: 10px;
+  background-image: url(${favoriteSelect});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  cursor: pointer;
+`;
+
+export const NotFavorite = styled.div`
   height: 17px;
   margin-bottom: 10px;
   background-image: url(${favorite});
@@ -30,7 +41,8 @@ export const Message = styled.div`
   height: 40px;
   width: 40px;
   margin-right: 20px;
-  background-color: white;
+  background-color: ${(props) =>
+    props.theme === "light" ? "#F8F8F8" : "#ffffff"};
   border-radius: 50%;
   background-image: url(${message});
   background-size: 20px 18px;
@@ -43,10 +55,32 @@ export const ItemHolder = styled.div`
 `;
 
 export const ItemId = styled.div`
+  display: flex;
+  align-items: baseline;
   margin-bottom: 5px;
   font-size: 10px;
   line-height: 14px;
+`;
+
+export const Id = styled.div`
+  margin-right: 3px;
   color: #ababab;
+`;
+
+export const Link = styled.a`
+  color: #8ea7ff;
+  cursor: pointer;
+`;
+
+export const LinkIcon = styled.a`
+  width: 10px;
+  height: 10px;
+  margin-left: 3px;
+  background-image: url(${link});
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #8ea7ff;
+  cursor: pointer;
 `;
 
 export const ItemText = styled.div`
@@ -75,6 +109,7 @@ export const ItemCategory = styled.div`
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #333333;
-  background-color: white;
+  background-color: ${(props) =>
+    props.theme === "light" ? "#F8F8F8" : "#ffffff"};
   border-radius: 6px;
 `;
