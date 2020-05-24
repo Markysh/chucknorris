@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/chucknorris.github.io/build/static/js/main.2e460a35.chunk.js",
+    "main.js.map": "/chucknorris.github.io/build/static/js/main.2e460a35.chunk.js.map",
+    "runtime-main.js": "/chucknorris.github.io/build/static/js/runtime-main.a0a00bca.js",
+    "runtime-main.js.map": "/chucknorris.github.io/build/static/js/runtime-main.a0a00bca.js.map",
+    "static/js/2.1bd2a174.chunk.js": "/chucknorris.github.io/build/static/js/2.1bd2a174.chunk.js",
+    "static/js/2.1bd2a174.chunk.js.map": "/chucknorris.github.io/build/static/js/2.1bd2a174.chunk.js.map",
+    "index.html": "/chucknorris.github.io/build/index.html",
+    "precache-manifest.ef281ddc6fe0fd31a29a7ee6fdb0a8f4.js": "/chucknorris.github.io/build/precache-manifest.ef281ddc6fe0fd31a29a7ee6fdb0a8f4.js",
+    "service-worker.js": "/chucknorris.github.io/build/service-worker.js",
+    "static/js/2.1bd2a174.chunk.js.LICENSE.txt": "/chucknorris.github.io/build/static/js/2.1bd2a174.chunk.js.LICENSE.txt",
+    "static/media/Roboto-Bold.ttf": "/chucknorris.github.io/build/static/media/Roboto-Bold.63326434.ttf",
+    "static/media/Roboto-Medium.ttf": "/chucknorris.github.io/build/static/media/Roboto-Medium.9dda4e59.ttf",
+    "static/media/Roboto-Regular.ttf": "/chucknorris.github.io/build/static/media/Roboto-Regular.90679e0c.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a0a00bca.js",
+    "static/js/2.1bd2a174.chunk.js",
+    "static/js/main.2e460a35.chunk.js"
+  ]
+}
