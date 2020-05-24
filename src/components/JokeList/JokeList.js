@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 export const JokeList = () => {
   const jokes = useSelector((state) => state.jokes).map((joke) => {
-    return <JokeItem key={joke.id} joke={joke} />;
+    return <JokeItem key={joke.id} joke={joke} theme={"dark"} />;
   });
 
   return <Container>{jokes}</Container>;

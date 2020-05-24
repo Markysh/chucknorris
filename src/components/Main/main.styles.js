@@ -1,12 +1,40 @@
 import styled from "styled-components";
+import { mediaMobile, mediaTablet } from "../../mediaBreakpointsMixin";
 
 export const Container = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+
+  ${mediaTablet(`
+    position: relative;
+  `)}
+`;
+
+export const Content = styled.div`
   width: 60%;
   margin: 40px 140px 0 140px;
+
+  ${mediaTablet(`
+    width: 100%;
+    margin: 40px 40px 0 40px;
+  `)}
+
+  ${mediaMobile(`
+    width: 100%;
+    margin: 20px 20px 0 20px; 
+  `)}
+`;
+
+export const Holder = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 75px;
 `;
 
 export const Name = styled.div`
-  margin-bottom: 75px;
   font-size: 20px;
   line-height: 28px;
   font-weight: bold;

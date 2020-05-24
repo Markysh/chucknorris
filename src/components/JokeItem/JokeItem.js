@@ -2,6 +2,7 @@ import React from "react";
 import {
   Container,
   Favorite,
+  NotFavorite,
   MessageHolder,
   Message,
   ItemHolder,
@@ -10,23 +11,38 @@ import {
   DescriptionWrapper,
   ItemUpdate,
   ItemCategory,
+  Link,
+  Id,
+  LinkIcon,
 } from "./jokeItem.styles";
+import { addFavorite, removeFavorite } from "../../store/favorites";
+import { useDispatch, useSelector } from "react-redux";
 
 export const JokeItem = (props) => {
-  const { joke } = props;
+  const { joke, theme = "dark" } = props;
+  const dispatch = useDispatch();
+  const isFavorite = useSelector((state) => state.favorites).indexOf(joke) > -1;
 
   return (
-    <Container>
-      <Favorite />
+    <Container theme={theme}>
+      {isFavorite ? (
+        <Favorite onClick={() => dispatch(removeFavorite(joke))} />
+      ) : (
+        <NotFavorite onClick={() => dispatch(addFavorite(joke))} />
+      )}
       <MessageHolder>
-        <Message />
+        <Message theme={theme} />
         <ItemHolder>
-          <ItemId>ID: {joke.id}</ItemId>
+          <ItemId>
+            <Id>ID:</Id>
+            <Link href={joke.id}>{joke.id}</Link>
+            <LinkIcon href={joke.id} />
+          </ItemId>
           <ItemText>{joke.value}</ItemText>
           <DescriptionWrapper>
             <ItemUpdate>Last update: 1923 hours ago</ItemUpdate>
             {joke.categories.length !== 0 && (
-              <ItemCategory>{joke.categories}</ItemCategory>
+              <ItemCategory theme={theme}>{joke.categories}</ItemCategory>
             )}
           </DescriptionWrapper>
         </ItemHolder>
