@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import {mediaMobile, mediaTablet} from "../../mediaBreakpointsMixin";
+import { mediaMobile, mediaTablet } from "../../mediaBreakpointsMixin";
 
 export const Container = styled.div`
   display: flex;
-  height: 100vh;
-  
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+
   ${mediaTablet(`
     position: relative;
   `)}
@@ -13,12 +15,12 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 60%;
   margin: 40px 140px 0 140px;
-  
+
   ${mediaTablet(`
     width: 100%;
     margin: 40px 40px 0 40px;
   `)}
-  
+
   ${mediaMobile(`
     width: 100%;
     margin: 20px 20px 0 20px; 

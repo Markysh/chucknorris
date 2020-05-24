@@ -3,7 +3,7 @@ import favorite from "./img/favorite.png";
 import favoriteSelect from "./img/favoriteSelect.png";
 import message from "./img/message.png";
 import link from "./img/link.png";
-import {mediaMobile} from "../../mediaBreakpointsMixin";
+import { mediaMobile } from "../../mediaBreakpointsMixin";
 
 export const Container = styled.div`
   box-sizing: border-box;
@@ -12,8 +12,9 @@ export const Container = styled.div`
   margin-bottom: 20px;
   background: ${(props) => (props.theme === "light" ? "#ffffff" : "#f8f8f8")};
   border-radius: 20px;
-  box-shadow: ${(props) => (props.theme === "light" ? "0 4px 6px rgba(0, 0, 0, 0.1)" : "none")};
-  
+  box-shadow: ${(props) =>
+    props.theme === "light" ? "0 4px 6px rgba(0, 0, 0, 0.1)" : "none"};
+
   ${mediaMobile(`
     padding: 20px 20px;
   `)}
@@ -100,7 +101,7 @@ export const DescriptionWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   ${mediaMobile(`
     flex-direction: column;
     align-items: baseline;
@@ -111,7 +112,7 @@ export const ItemUpdate = styled.div`
   font-size: 10px;
   line-height: 14px;
   color: #ababab;
-  
+
   ${mediaMobile(`
     margin-bottom: 10px;
   `)}

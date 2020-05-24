@@ -23,5 +23,3 @@ export function mediaMobile(content) {
     }
   `;
 }
-
-

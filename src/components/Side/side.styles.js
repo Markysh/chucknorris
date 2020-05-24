@@ -1,12 +1,27 @@
 import styled from "styled-components";
 import { mediaMobile, mediaTablet } from "../../mediaBreakpointsMixin";
 
+export const TabletBackground = styled.div`
+  ${mediaTablet(`
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  `)}
+`;
+
 export const Container = styled.div`
   width: 40%;
-  height: 100vh;
+  min-height: 100%;
   background-color: #f8f8f8;
   padding: 0 40px;
-  
+
   ${mediaTablet(`
     width: 60%;
     padding-top: 90px;
@@ -15,7 +30,7 @@ export const Container = styled.div`
     bottom: 0;
     box-sizing: border-box;
   `)}
-  
+
   ${mediaMobile(`
     width: 100%;
     padding-top: 90px;

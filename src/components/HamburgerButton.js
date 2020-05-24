@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import {mediaMobile, mediaTablet} from "../mediaBreakpointsMixin";
+import { mediaMobile, mediaTablet } from "../mediaBreakpointsMixin";
 
-export const HamburgerButton = props => {
-  const {isOpen} = props;
+export const HamburgerButton = (props) => {
+  const { isOpen } = props;
 
   return (
     <Holder>
       <MenuButton className={isOpen ? "active" : " "} onClick={props.onClick}>
-        <Bar/>
-        <Bar/>
+        <Bar />
+        <Bar />
       </MenuButton>
       <Title>Favourite</Title>
     </Holder>
@@ -18,20 +18,21 @@ export const HamburgerButton = props => {
 
 const Holder = styled.div`
   display: none;
-  
+
   ${mediaTablet(`
     display: flex;
     align-items: center;
-    position: fixed;
+    position: absolute;
     right: 40px;
-    z-index: 1;
+    z-index: 2;
   `)}
-  
+
   ${mediaMobile(`
     display: flex;
+    position: absolute;
+    right: 20px;
     z-index: 1;
   `)}
-  
 `;
 
 const MenuButton = styled.button`
@@ -46,7 +47,7 @@ const MenuButton = styled.button`
   border: none;
   cursor: pointer;
   outline: none;
-  
+
   span {
     transition: all 0.3s ease-in-out;
   }
@@ -60,16 +61,15 @@ const MenuButton = styled.button`
       transform: rotate(-45deg) translate(2px, -2px);
     }
   }
-
 `;
 
 const Bar = styled.span`
-    width: 14px;
-    height: 2px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    background-color: white;
-    border-radius: 2px
+  width: 14px;
+  height: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: white;
+  border-radius: 2px;
 `;
 
 export const Title = styled.div`

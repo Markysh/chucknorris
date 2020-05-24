@@ -21,6 +21,7 @@ import { Categories } from "../Categories/Categories";
 import { TextSearch } from "../TextSearch/TextSearch";
 import { HamburgerButton } from "../HamburgerButton";
 import { Side } from "../Side/Side";
+import { TabletBackground } from "../Side/side.styles";
 
 export const Main = () => {
   const dispatch = useDispatch();
@@ -49,7 +50,11 @@ export const Main = () => {
         <Holder>
           <Name>MSI 2020</Name>
           <HamburgerButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
-          {isOpen && <Side/>}
+          {isOpen && (
+            <TabletBackground>
+              <Side />
+            </TabletBackground>
+          )}
         </Holder>
         <Title>Hey!</Title>
         <Subtitle>Let’s try to find a joke for you:</Subtitle>
