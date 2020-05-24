@@ -26,8 +26,10 @@ export const Container = styled.div`
     width: 60%;
     padding-top: 90px;
     position: absolute;
+    top: 0;
     right: 0;
     bottom: 0;
+    overflow: scroll;
     box-sizing: border-box;
   `)}
 
@@ -35,8 +37,10 @@ export const Container = styled.div`
     width: 100%;
     padding-top: 90px;
     position: absolute;
+    top: 0;
     left: 0;
     bottom: 0;
+    overflow: scroll;
     box-sizing: border-box;
   `)}
 `;

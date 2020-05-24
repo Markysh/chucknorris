@@ -11,7 +11,8 @@ const removeFavoriteAction = (payload) => ({
   payload,
 });
 
-const initialState = [];
+const favoritesFromStore = JSON.parse(localStorage.getItem("favorites"));
+const initialState = favoritesFromStore || [];
 
 export function favoritesReducer(store = initialState, { type, payload }) {
   switch (type) {

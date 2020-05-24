@@ -15,3 +15,8 @@ export const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(thunk))
 );
+
+store.subscribe(() => {
+  const favorites = store.getState().favorites;
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+});
