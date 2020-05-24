@@ -22,10 +22,14 @@ const Holder = styled.div`
   ${mediaTablet(`
     display: flex;
     align-items: center;
+    position: fixed;
+    right: 40px;
+    z-index: 1;
   `)}
   
   ${mediaMobile(`
     display: flex;
+    z-index: 1;
   `)}
   
 `;
@@ -48,17 +52,12 @@ const MenuButton = styled.button`
   }
 
   &.active {
-    position: fixed;
-    top: 40.5px;
-    left: 30px;
-    z-index: 3;
-  
     span:nth-of-type(1) {
-      transform: rotate(45deg) translate(4px, 5px);
+      transform: rotate(45deg) translate(2px, 2px);
     }
 
     span:nth-of-type(2) {
-      transform: rotate(-45deg) translate(4px, -5px);
+      transform: rotate(-45deg) translate(2px, -2px);
     }
   }
 

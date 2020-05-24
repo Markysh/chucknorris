@@ -48,7 +48,7 @@ export const Main = () => {
       <Content>
         <Holder>
           <Name>MSI 2020</Name>
-          <HamburgerButton onClick={() => setIsOpen(!isOpen)} />
+          <HamburgerButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
           {isOpen && <Side/>}
         </Holder>
         <Title>Hey!</Title>

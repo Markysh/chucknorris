@@ -4,6 +4,10 @@ import {mediaMobile, mediaTablet} from "../../mediaBreakpointsMixin";
 export const Container = styled.div`
   display: flex;
   height: 100vh;
+  
+  ${mediaTablet(`
+    position: relative;
+  `)}
 `;
 
 export const Content = styled.div`
