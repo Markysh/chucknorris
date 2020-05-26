@@ -20,7 +20,6 @@ export const Container = styled.div`
   width: 40%;
   min-height: 100%;
   background-color: #f8f8f8;
-  padding: 0 40px;
 
   ${mediaTablet(`
     width: 60%;
@@ -29,19 +28,29 @@ export const Container = styled.div`
     top: 0;
     right: 0;
     bottom: 0;
-    overflow: scroll;
     box-sizing: border-box;
   `)}
 
   ${mediaMobile(`
     width: 100%;
+    height: 100%;
     padding-top: 90px;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    overflow: scroll;
     box-sizing: border-box;
+  `)}
+`;
+
+export const ItemsHolder = styled.div`
+  position: fixed;
+  height: 100%;
+  padding: 0 40px;
+  overflow: scroll;
+
+  ${mediaMobile(`
+    padding: 0 20px;
   `)}
 `;
 
