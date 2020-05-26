@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/chucknorris/build/static/js/main.1d156db3.chunk.js",
-    "main.js.map": "/chucknorris/build/static/js/main.1d156db3.chunk.js.map",
+    "main.js": "/chucknorris/build/static/js/main.9fba90b5.chunk.js",
+    "main.js.map": "/chucknorris/build/static/js/main.9fba90b5.chunk.js.map",
     "runtime-main.js": "/chucknorris/build/static/js/runtime-main.ef990692.js",
     "runtime-main.js.map": "/chucknorris/build/static/js/runtime-main.ef990692.js.map",
     "static/js/2.c315e05e.chunk.js": "/chucknorris/build/static/js/2.c315e05e.chunk.js",
     "static/js/2.c315e05e.chunk.js.map": "/chucknorris/build/static/js/2.c315e05e.chunk.js.map",
     "index.html": "/chucknorris/build/index.html",
-    "precache-manifest.ad565bcd8079119de2e351e4c295eff4.js": "/chucknorris/build/precache-manifest.ad565bcd8079119de2e351e4c295eff4.js",
+    "precache-manifest.8b80eeb998e3cfcb92db887e83085d0e.js": "/chucknorris/build/precache-manifest.8b80eeb998e3cfcb92db887e83085d0e.js",
     "service-worker.js": "/chucknorris/build/service-worker.js",
     "static/js/2.c315e05e.chunk.js.LICENSE.txt": "/chucknorris/build/static/js/2.c315e05e.chunk.js.LICENSE.txt",
     "static/media/Roboto-Bold.ttf": "/chucknorris/build/static/media/Roboto-Bold.63326434.ttf",
@@ -17,6 +17,6 @@
   "entrypoints": [
     "static/js/runtime-main.ef990692.js",
     "static/js/2.c315e05e.chunk.js",
-    "static/js/main.1d156db3.chunk.js"
+    "static/js/main.9fba90b5.chunk.js"
   ]
 }

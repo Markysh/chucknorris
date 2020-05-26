@@ -19,7 +19,7 @@ import {
 import { JokeList } from "../JokeList/JokeList";
 import { Categories } from "../Categories/Categories";
 import { TextSearch } from "../TextSearch/TextSearch";
-import { HamburgerButton } from "../HamburgerButton";
+import { HamburgerButton } from "../HamburgerButton/HamburgerButton";
 import { Side } from "../Side/Side";
 import { TabletBackground } from "../Side/side.styles";
 

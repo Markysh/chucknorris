@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { mediaMobile, mediaTablet } from "../mediaBreakpointsMixin";
+import { mediaMobile, mediaTablet } from "../../mediaBreakpointsMixin";
 
 export const HamburgerButton = (props) => {
   const { isOpen } = props;
@@ -38,10 +38,10 @@ const Holder = styled.div`
 const MenuButton = styled.button`
   width: 28px;
   height: 28px;
-  padding: 10px 7px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: #333333;
   border-radius: 50%;
   border: none;
